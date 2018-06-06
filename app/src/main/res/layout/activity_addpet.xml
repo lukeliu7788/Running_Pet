@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/colorAdd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.17"
+        android:onClick="ImageChange"
+        android:src="@mipmap/pet1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"/>
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="120pt">
+
+        <TableRow
+            android:id="@+id/trname"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            >
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Name"
+                android:gravity="fill"
+                android:layout_weight="1"
+                />
+            <EditText
+                android:id="@+id/edtname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@null"
+                android:singleLine="true"
+                android:maxLength="14"
+                android:gravity="center_vertical"
+                />
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="@color/colorAdd"/>
+
+
+        <TableRow
+            android:id="@+id/trgender"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            >
+
+            <TextView
+                android:id="@+id/tvgender"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="fill"
+                android:text="Gender" />
+
+            <RadioGroup
+                android:id="@+id/rbggender"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <RadioButton
+                    android:id="@+id/rbmale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="male"
+                    />
+                <RadioButton
+                    android:id="@+id/rbfemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="female"
+                    android:checked="true"
+                    />
+            </RadioGroup>
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="@color/colorAdd"/>
+
+        <TableRow
+            android:id="@+id/trbreed"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            >
+
+            <TextView
+                android:id="@+id/tvbreed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Breed"
+                android:gravity="fill"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/edtbreed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="@null"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:gravity="center_vertical|left"
+                />
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="@color/colorAdd"/>
+
+        <TableRow
+            android:id="@+id/trbsd"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            >
+            <TextView
+                android:id="@+id/tvbsd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Birthday"
+                android:gravity="fill"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvbir"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/color5"
+                android:textSize="18sp"
+                android:gravity="center_vertical|left"
+                android:layout_weight="1"
+                />
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="@color/colorAdd"/>
+
+        <TableRow
+            android:id="@+id/trArve"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            >
+            <TextView
+                android:id="@+id/tvArve"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Arriving time"
+                android:gravity="fill"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tvarv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/color5"
+                android:textSize="18sp"
+                android:gravity="center_vertical|left"
+                android:layout_weight="1"
+                />
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="@color/colorAdd"/>
+
+
+        <TableRow
+            android:id="@+id/trSt"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            >
+            <TextView
+                android:id="@+id/tvSt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sterilization"
+                android:gravity="fill"
+                android:layout_weight="1" />
+            <RadioGroup
+                android:id="@+id/rbgster"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <RadioButton
+                    android:id="@+id/rbYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Yes"
+                    />
+                <RadioButton
+                    android:id="@+id/rbNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="No"
+                    android:checked="true"
+                    />
+            </RadioGroup>
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/addpet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="64dp"
+            android:layout_marginStart="64dp"
+            android:onClick="adpaddclik"
+            />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="65dp"
+            android:layout_marginRight="65dp"
+            android:text="cancel"
+            android:onClick="adpcancelclik"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/addcontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+
+</LinearLayout>
